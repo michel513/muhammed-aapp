@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formation 4K Pro YouTube</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+      
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background-color: #1a1033;
+        color: #e2e8f0;
+        margin: 0;
+        padding: 20px;
+        line-height: 1.6;
+      }
+
+      .email-wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #2a1f43;
+        border-radius: 16px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+      }
+
+      .email-header {
+        background: linear-gradient(135deg, #3b82f6, #2563eb);
+        padding: 40px 30px;
+        text-align: center;
+      }
+
+      .logo {
+        font-size: 32px;
+        font-weight: 800;
+        color: #ffffff;
+        margin-bottom: 10px;
+        letter-spacing: -1px;
+      }
+
+      .price-tag {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 8px 16px;
+        border-radius: 20px;
+        display: inline-block;
+        margin-top: 15px;
+        font-weight: 600;
+      }
+
+      .email-body {
+        padding: 40px;
+        background-color: #2a1f43;
+        color: #e2e8f0;
+      }
+
+      .highlight {
+        color: #3b82f6;
+        font-weight: 600;
+      }
+
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 30px 0;
+      }
+
+      .feature-card {
+        background-color: #1a1033;
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid #3b82f6;
+      }
+
+      .feature-title {
+        color: #3b82f6;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .cta-button {
+        display: block;
+        background: linear-gradient(135deg, #3b82f6, #2563eb);
+        color: white;
+        text-decoration: none;
+        padding: 16px 32px;
+        border-radius: 12px;
+        text-align: center;
+        font-weight: 600;
+        margin: 30px 0;
+        transition: all 0.3s ease;
+      }
+
+      .cta-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+      }
+
+      .stats {
+        background-color: #1a1033;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 25px 0;
+        text-align: center;
+      }
+
+      .stat-item {
+        margin: 15px 0;
+      }
+
+      .stat-value {
+        font-size: 24px;
+        font-weight: 700;
+        color: #3b82f6;
+      }
+
+      .email-footer {
+        text-align: center;
+        padding: 25px;
+        font-size: 14px;
+        color: #94a3b8;
+        background-color: #1a1033;
+        border-top: 1px solid #3b82f6;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .features-grid {
+          grid-template-columns: 1fr;
+        }
+        
+        .email-body {
+          padding: 30px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-wrapper">
+      <div class="email-header">
+        <div class="logo">4K Pro YouTube</div>
+        <h1 style="color: white; margin: 10px 0">Formation Complète</h1>
+        <div class="price-tag">62€ / 40.000 FCFA</div>
+      </div>
+
+      <div class="email-body">
+        <p>Bonjour <span class="highlight"><%= firstName %></span>,</p>
+
+        <p>
+          Félicitations pour votre inscription à la formation 4K Pro YouTube ! 
+          Vous êtes sur le point d'accéder à notre formation complète qui a déjà 
+          transformé la vie de centaines de créateurs.
+        </p>
+
+        <div class="stats">
+          <div class="stat-item">
+            <div class="stat-value">500+</div>
+            <div>Élèves satisfaits</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">100K+</div>
+            <div>Abonnés cumulés</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">2M€+</div>
+            <div>Revenus générés</div>
+          </div>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-title">Automatisation</div>
+            <div>Créez des chaînes YouTube qui génèrent des revenus passifs</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-title">Monétisation</div>
+            <div>Atteignez les 4000 heures et 1000 abonnés rapidement</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-title">Communauté</div>
+            <div>Rejoignez un groupe de créateurs motivés</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-title">Support</div>
+            <div>Accès à notre équipe de support dédiée</div>
+          </div>
+        </div>
+
+        <p>Pour accéder immédiatement à la formation, cliquez ci-dessous :</p>
+
+        <a href="<%= payementPageUrl %>" class="cta-button">
+          Commencer ma formation →
+        </a>
+
+        <p>À très vite dans la formation !<br/>L'équipe 4K Pro YouTube</p>
+      </div>
+
+      <div class="email-footer">
+        &copy; 2024 4K Pro YouTube. Tous droits réservés.
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirmation de Paiement</title>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+        background-color: #0f172a;
+        color: #e2e8f0;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 600px;
+        background-color: #1e293b;
+        margin: 20px auto;
+        border-radius: 12px;
+        box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+      }
+      .header {
+        background: linear-gradient(135deg, #eab308, #f59e0b);
+        color: #0f172a;
+        padding: 30px 20px;
+        text-align: center;
+      }
+      .header h1 {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+      }
+      .content {
+        padding: 30px 40px;
+        background-color: #1e293b;
+        color: #e2e8f0;
+      }
+      .content p {
+        margin: 15px 0;
+      }
+      .info-box {
+        background-color: #243044;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 20px 0;
+        color: #e2e8f0;
+      }
+      .info-box p {
+        margin: 10px 0;
+      }
+      .proof-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin: 20px 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .button {
+        display: inline-block;
+        padding: 14px 28px;
+        background: linear-gradient(135deg, #eab308, #f59e0b);
+        color: #0f172a;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 8px;
+        margin: 20px 0;
+        text-align: center;
+        transition: all 0.3s ease;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .button:hover {
+        background: linear-gradient(135deg, #f59e0b, #eab308);
+        transform: translateY(-2px);
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+      }
+      .contact {
+        background-color: #243044;
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      .contact a {
+        color: #facc15;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .footer {
+        text-align: center;
+        margin-top: 30px;
+        color: #94a3b8;
+        font-size: 14px;
+        border-top: 1px solid #334155;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Confirmation de Paiement</h1>
+      </div>
+
+      <div class="content">
+        <p>Cher(e) <span class="highlight"><%= firstName %></span>,</p>
+
+        <p>
+          Nous avons bien reçu votre paiement et nous vous en remercions. Voici
+          un récapitulatif de vos informations :
+        </p>
+
+        <div class="info-box">
+          <p><strong>Nom :</strong> <%= firstName %></p>
+          <p><strong>Email :</strong> <%= email %></p>
+          <p><strong>Téléphone :</strong> <%= phone %></p>
+          <p><strong>Montant :</strong> 13 000 F CFA</p>
+        </div>
+
+        <h3>Preuve de Paiement</h3>
+        <img
+          src="<%= paymentProofUrl %>"
+          alt="Preuve de paiement"
+          class="proof-image"
+        />
+
+        <div class="contact">
+          <h3>Besoin d'aide ?</h3>
+          <p>Notre équipe de support est disponible pour vous aider :</p>
+          <p>📞 <a href="tel:+221770970133">+221 77 097 01 33</a></p>
+          <p>📞 <a href="tel:+221773164914">+221 77 316 49 14</a></p>
+          <p>Vous pouvez également nous contacter via WhatsApp aux mêmes numéros.</p>
+        </div>
+
+        <div class="footer">
+          <p>Cet email est automatique, merci de ne pas y répondre directement.</p>
+          <p>© <%= new Date().getFullYear() %> Tous droits réservés.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
