@@ -119,7 +119,7 @@ const OrangeMoneyPage = () => {
               +221 77 097 01 33
             </a> ou
             <a href="tel:+221770970133" className="text-blue-400 ml-2 hover:text-blue-300 transition-colors">
-              +221 77 984 76 19
+              +221 70 594 37 90
             </a> Vous pouvez aussi nous joindre via à whatsapp ou message
           </p>
         </div>

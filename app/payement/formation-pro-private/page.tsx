@@ -17,13 +17,6 @@ const PaymentPage = () => {
       icon: '/photos/afrique-ouest.gif',
       description: 'Payez en afrique de l\'ouest',
       href: '/payement/formation-pro-private/afrique-de-louest'
-    },
-    {
-      id: 'international',
-      name: 'International',
-      icon: '/photos/world.webp',
-      description: 'Payez à l\'international',
-      href: '/payement/formation-pro-private/international'
     }
   ];
 
@@ -47,7 +40,7 @@ const PaymentPage = () => {
             <div className="inline-block">
               <p className="text-white/80 bg-gradient-to-br from-gray-900 to-gray-800 backdrop-blur-sm px-6 py-2 rounded-full">
 
-                Montant : <span className="font-bold text-yellow-400">13000 FCFA</span>
+                Montant : <span className="font-bold text-yellow-400">100.000 FCFA</span>
               </p>
             </div>
           </div>
@@ -120,7 +113,7 @@ const PaymentPage = () => {
                   +221 77 097 01 33
                 </a> ou
                 <a href="tel:+221770970133" className="text-blue-400 ml-2 hover:text-blue-300 transition-colors">
-                  +221 77 984 76 19
+                  +221 70 594 37 90
                 </a> Vous pouvez aussi nous joindre via à whatsapp ou message
               </p>
             </div>
