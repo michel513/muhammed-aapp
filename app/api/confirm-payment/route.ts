@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import path from 'path';
+
 import sendMail from '@/utils/sendMail';
 import { uploadSingleFile } from '@/utils/uploadthingsApi';
 
@@ -23,6 +24,7 @@ export async function POST(req: Request) {
 
     // Upload file using uploadthings (maintenant côté serveur)
     let uploadResponse;
+    
     try {
       uploadResponse = await uploadSingleFile(paymentProof, 'Image');
       if (!uploadResponse?.url) {
