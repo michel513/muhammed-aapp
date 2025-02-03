@@ -16,14 +16,14 @@ const PaymentPage = () => {
       name: 'Afrique de l\'ouest',
       icon: '/photos/afrique-ouest.gif',
       description: 'Payez en afrique de l\'ouest',
-      href: '/payement/afrique-de-louest'
+      href: '/payement/formation-pro/afrique-de-louest'
     },
     {
       id: 'international',
       name: 'International',
       icon: '/photos/world.webp',
       description: 'Payez à l\'international',
-      href: '/payement/international'
+      href: '/payement/formation-pro/international'
     }
   ];
 

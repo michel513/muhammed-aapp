@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['utfs.io'], 
+    domains: ['rb8rdqum7a.ufs.sh'], 
   },
 };
 

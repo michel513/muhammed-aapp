@@ -19,7 +19,7 @@ const PaymentPage = () => {
       description: 'Payez avec Wave',
       color: 'bg-blue-500',
       number: '+221 77 984 76 19',
-      href: '/payement/afrique-de-louest/wave-money'
+      href: '/payement/formation-pro/afrique-de-louest/wave-money'
     },
     {
       id: 'orange-money',
@@ -28,7 +28,7 @@ const PaymentPage = () => {
       description: 'Payez avec Orange Money',
       color: 'bg-orange-500',
       number: '+221 77 984 76 19',
-      href: '/payement/afrique-de-louest/orange-money'
+      href: '/payement/formation-pro/afrique-de-louest/orange-money'
     }
   ];
 
