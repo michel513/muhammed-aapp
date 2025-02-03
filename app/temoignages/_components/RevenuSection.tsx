@@ -52,6 +52,8 @@ export function RevenusSection() {
                 <Image
                   src={`/photos/state-${i + 1}.jpeg`}
                   alt={`state ${i + 1}`}
+                  width={200}
+                  height={200}
                   className="w-full h-full object-cover"
                 />
               </motion.div>
