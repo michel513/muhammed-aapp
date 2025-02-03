@@ -11,7 +11,7 @@ import { SignupModalPrivate } from '@/app/components/signupModalPrivate';
 import Footer from '../components/Footer';
 import { Navbar } from '../components/Navbar';
 
-export const AboutSection = () => {
+const AboutSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalPrivateOpen, setIsModalPrivateOpen] = useState(false);
 
