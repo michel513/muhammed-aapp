@@ -128,7 +128,7 @@ const PaymentInterface = () => {
 
           <div className="text-center">
             <Button
-              onClick={() => window.open("https://pay.wave.com/m/M_sn_G2Wr-JkkZgll/c/sn/?amount='40000", "_blank")}
+              onClick={() => window.open("https://pay.wave.com/m/M_sn_G2Wr-JkkZgll/c/sn/?amount=40000", "_blank")}
             >
               Payer
             </Button>
