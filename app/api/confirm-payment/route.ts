@@ -16,6 +16,8 @@ export async function POST(req: Request) {
     const phone = formData.get('phone') as string;
     const paymentProof = formData.get('paymentProof') as File;
 
+    const whatsappUrl = process.env.WHATSAPP_URL;
+
     // Validation
     if (!firstName || !email || !phone || !paymentProof) {
       return NextResponse.json({
@@ -44,7 +46,8 @@ export async function POST(req: Request) {
       firstName,
       email,
       phone,
-      paymentProofUrl: uploadResponse.url
+      paymentProofUrl: uploadResponse.url,
+      whatsappUrl
     };
 
     // Send email
