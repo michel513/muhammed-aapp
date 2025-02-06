@@ -91,7 +91,7 @@ const OrangeMoneyPage = () => {
           {/* Button vers la confirmation de paiement */}
           <div className="mt-10 text-center">
             <button
-              onClick={() => router.push('/payement/confirmation-payement')}
+              onClick={() => router.push('/payement/formation-pro/confirmation-payement')}
               className="px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg shadow-md transition-all"
             >
               Confirmer le paiement

@@ -78,7 +78,7 @@ const PaymentInterface = () => {
       formData.append('paymentProof', image); // Envoi direct du fichier
 
       // Send data to the server
-      const response = await axios.post('/api/confirm-payment', formData, {
+      const response = await axios.post('/api/confirm-payment-private', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
